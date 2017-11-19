@@ -22,21 +22,6 @@ export class GanttComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // gantt.config.xml_date = '%Y-%m-%d %H:%i';
-    // gantt.config.scale_unit = 'day';
-    // gantt.config.date_scale = '%d/%m/%Y';
-
-
-    // let startDate = new Date(2017, 10, 1);
-    // let endDate = new Date(2017, 10, 30);
-    // gantt.init(this.ganttContainer.nativeElement, startDate, endDate);
-    
-    // this.taskService.getTasks().subscribe(
-    //   data => {
-    //     gantt.parse({data});
-    //   }
-    // );
-
     this.setViewToDay();
   }
 
@@ -45,7 +30,7 @@ export class GanttComponent implements OnInit {
     gantt.config.scale_unit = 'day';
     gantt.config.date_scale = '%d/%m/%Y';
 
-    this.setIniGannt();
+    this.setIniGantt();
   }
 
   setViewToWeek(){
@@ -53,10 +38,10 @@ export class GanttComponent implements OnInit {
     gantt.config.scale_unit = 'week';
     gantt.config.date_scale = 'Semana %W';
 
-    this.setIniGannt();
+    this.setIniGantt();
   }
 
-  setIniGannt(){    
+  setIniGantt(){    
     let startDate = new Date(2017, 10, 1);
     let endDate = new Date(2017, 10, 30);
     gantt.init(this.ganttContainer.nativeElement, startDate, endDate);
