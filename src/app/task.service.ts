@@ -16,14 +16,14 @@ export class TaskService {
     return of ([
       {
         'id': 1,
-        'text': 'Sergio',
+        'text': 'Atividade 1',
         'start_date': '2017-11-19 00:00',
         'duration': 3,
         'progress': 0.6        
       },
       {
         'id': 2,
-        'text': 'Vania',
+        'text': 'Atividade 2',
         'start_date': '2017-11-20 00:00',
         'duration': 3,
         'progress': 0.6,
